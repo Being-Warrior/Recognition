@@ -485,9 +485,15 @@
     <script>
         (() => {
           const chars = "!<>-_\\/[]{}—=+*^?#________";
-          const words = ["Influence","Demand","Authority","Opportunity"];
+          const words = ["Influence","Demand","Authority"];
           const el = document.querySelector('.changing-words');
           let i = 0;
+          
+          // Set a fixed width to prevent layout shifts
+          el.style.minWidth = '220px';
+          el.style.display = 'inline-block';
+          el.style.textAlign = 'left';
+          
           function scramble(to){
             const from = el.textContent || "";
             const max = Math.max(from.length, to.length);
