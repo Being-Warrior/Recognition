@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Recognition – Premium Personal Brand & LinkedIn Ghostwriting</title>
+	<meta name="description" content="Transform your expertise into influence that drives results. Premium LinkedIn ghostwriting and personal brand development for executives, founders, and thought leaders." />
+	<meta name="theme-color" content="#D7CCC8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			darkMode: 'class',
+			theme: {
+				extend: {
+					colors: {
+						primary: '#D7CCC8', // Beige
+						secondary: '#6D4C41', // Dark Brown
+						accent: '#FFAB91', // Peach
+						emerald: '#10b981',
+						neutral: '#f8fafc',
+						ink: '#222222'
+					},
+					fontFamily: {
+						heading: ['Poppins', 'ui-sans-serif', 'system-ui'],
+						sans: ['Source Sans 3', 'ui-sans-serif', 'system-ui']
+					}
+				}
+			}
+		}
+	</script>
+	<style>
+		html{scroll-behavior:smooth}
+		/***** Reveal animation *****/
+		.section-reveal{opacity:0; transform: translateY(20px); transition: all .7s ease}
+		.section-reveal.revealed{opacity:1; transform: translateY(0)}
+		/***** Animated gradient hero backdrop *****/
+		.gradient-hero:before{content:""; position:absolute; inset:-20%; background: conic-gradient(from 180deg at 50% 50%, rgba(255,171,145,0.25), rgba(16,185,129,0.15), rgba(215,204,200,0.35), rgba(255,171,145,0.25)); filter: blur(60px); transform: scale(1.2); animation: spin 18s linear infinite}
+		@keyframes spin{to{transform: rotate(1turn) scale(1.2)}}
+		/***** Gradient text utility for animated word *****/
+		.text-gradient{background-image: linear-gradient(90deg, #6D4C41, #10b981); -webkit-background-clip:text; background-clip:text; color:transparent}
+		/***** Hover glass gradient utility *****/
+		.hover-glass:hover{background: linear-gradient(135deg, rgba(215,204,200,.35), rgba(16,185,129,.18)); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);} 
+		/***** CTA gradient + pulse *****/
+		.btn-gradient{background-image: linear-gradient(90deg, #6D4C41, #10b981); box-shadow: 0 10px 25px -5px rgba(109,76,65,.35)}
+		.btn-pulse{animation: pulseGlow 2.2s ease-in-out infinite}
+		@keyframes pulseGlow{0%,100%{filter: drop-shadow(0 0 0 rgba(109,76,65,.0))}50%{filter: drop-shadow(0 4px 12px rgba(109,76,65,.35))}}
+		/***** Navbar shadow on scroll *****/
+		.nav-shadow{box-shadow: 0 10px 30px -20px rgba(0,0,0,.25)}
+		/***** Slightly larger base font *****/
+		body{font-size:18px}
+		/***** Dark mode text visibility overrides *****/
+		.dark .text-ink\/80{color: rgba(248,250,252,0.88) !important}
+		.dark .text-ink\/70{color: rgba(248,250,252,0.78) !important}
+		.dark .text-ink\/60{color: rgba(248,250,252,0.66) !important}
+		/* Improve dark-mode readability of form controls and dropdown menus */
+		.dark input, .dark textarea, .dark select { color: #f8fafc; background-color: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.2); }
+		.dark select option, .dark select optgroup { color: #f8fafc; background-color: #111; }
+		/* Safari/Firefox dropdown pane background (best-effort; native menus vary by OS) */
+		@supports (-webkit-touch-callout: none) {
+			.dark select { background-color: rgba(255,255,255,0.06); }
+		}
+		.collage-cell img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; }
+
+		/* Prevent horizontal scroll; keep site width equal to viewport width */
+		html, body { max-width: 100vw; overflow-x: hidden; }
+	</style>
+</head>
+<body class="bg-neutral text-ink dark:bg-[#0a0a0a] dark:text-neutral font-sans">
+	<!-- Navbar -->
+	<header id="navbar" class="sticky top-0 z-40 backdrop-blur bg-neutral/80 dark:bg-black/40 border-b border-secondary/10 transition-shadow">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 h-16 flex items-center justify-between">
+			<a href="#top" class="text-secondary font-heading font-semibold text-lg">Recognition</a>
+			<nav class="hidden md:flex gap-2 text-base">
+				<a href="#services" class="px-3 py-2 rounded-md hover-glass transition">Services</a>
+				<a href="#work" class="px-3 py-2 rounded-md hover-glass transition">Case Studies</a>
+				<a href="#resources" class="px-3 py-2 rounded-md hover-glass transition">Resources</a>
+				<a href="#contact" class="px-3 py-2 rounded-md hover-glass transition">Contact</a>
+			</nav>
+			<div class="flex items-center gap-2">
+				<button id="themeToggle" aria-label="Toggle theme" class="px-3 py-2 rounded-md border border-secondary/20 hover-glass transition text-base">🌙</button>
+				<a href="#contact" class="inline-flex items-center justify-center rounded-md border border-secondary text-secondary px-4 py-2 text-sm font-semibold transition hover:bg-secondary/10">Contact</a>
+				<a href="#contact" class="inline-flex items-center justify-center rounded-md btn-gradient text-white px-4 py-2 text-sm font-semibold transition hover:opacity-90 btn-pulse">Book Free Call</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- Hero -->
+	<section id="top" class="relative overflow-hidden bg-white dark:bg-[#0b0b0b] gradient-hero">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 grid gap-10 items-center py-20 md:py-28">
+			<div class="space-y-7 section-reveal text-center">
+				<span class="inline-flex items-center gap-2 rounded-full border border-secondary/20 dark:border-white/15 bg-neutral dark:bg-[#111] px-3 py-1 text-xs text-ink/70">Premium for Executives <span class="h-1.5 w-1.5 rounded-full bg-emerald"></span> LinkedIn-first</span>
+				<h1 class="text-5xl md:text-7xl font-heading font-semibold leading-tight tracking-tight text-black dark:text-black">
+					Transform Your Expertise Into <span class="changing-words text-gradient">Influence</span>
+				</h1>
+				<p class="text-ink/80 text-lg max-w-3xl mx-auto">We craft positioning, narratives, and content systems that compound into revenue and opportunity.</p>
+				<div class="flex flex-col sm:flex-row gap-3 justify-center">
+					<a href="#contact" class="inline-flex items-center justify-center rounded-md btn-gradient text-white px-6 py-3 text-sm font-semibold transition hover:opacity-95 btn-pulse">Book Free Strategy Call</a>
+                    <a href="#work" class="inline-flex items-center justify-center rounded-md border border-secondary dark:border-white/25 text-secondary dark:text-neutral px-6 py-3 text-sm font-semibold transition hover:bg-secondary/10 dark:hover:bg-white/10 hover-glass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40">View Case Studies</a>				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Credibility Bar -->
+<section class="bg-neutral">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="rounded-lg p-4 hover:bg-white/60 dark:hover:bg-white/5 transition">
+            <div class="text-3xl font-semibold text-secondary"><span class="count" data-to="500">0</span>+</div>
+            <p class="text-sm dark:text-ink/70">LinkedIn Posts Created</p>
+        </div>
+        <div class="rounded-lg p-4 hover:bg-white/60 dark:hover:bg-white/5 transition">
+            <div class="text-3xl font-semibold text-secondary"><span class="count" data-to="10">0</span>M+</div>
+            <p class="text-sm dark:text-ink/70">Impressions Generated</p>
+        </div>
+        <div class="rounded-lg p-4 hover:bg-white/60 dark:hover:bg-white/5 transition">
+            <div class="text-3xl font-semibold text-secondary">$<span class="count" data-to="2">0</span>M+</div>
+            <p class="text-sm dark:text-ink/70">Client Revenue</p>
+        </div>
+        <div class="rounded-lg p-4 hover:bg-white/60 dark:hover:bg-white/5 transition">
+            <div class="text-3xl font-semibold text-secondary"><span class="count" data-to="50">0</span>+</div>
+            <p class="text-sm dark:text-ink/70">Executives Served</p>
+        </div>
+    </div>
+</section>
+
+	<!-- Features section (adds density) -->
+	<section class="bg-white dark:bg-[#0b0b0b]">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+			<h2 class="text-3xl md:text-4xl font-heading font-semibold mb-10 section-reveal">Why Recognition</h2>
+			<div class="grid gap-6 md:grid-cols-3">
+				<div class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] p-6 hover:bg-white/70 dark:hover:bg-white/5 transition section-reveal">
+					<div class="text-sm font-semibold mb-1">Executive-Grade Process</div>
+					<p class="text-sm text-ink/70">Brief once; we run. Weekly approvals, attribution reporting, and calendar integration.</p>
+				</div>
+				<div class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] p-6 hover:bg-white/70 dark:hover:bg-white/5 transition section-reveal">
+					<div class="text-sm font-semibold mb-1">Substance Over Vanity</div>
+					<p class="text-sm text-ink/70">Thought leadership rooted in lived experience. No filler threads or clichés.</p>
+				</div>
+				<div class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] p-6 hover:bg-white/70 dark:hover:bg-white/5 transition section-reveal">
+					<div class="text-sm font-semibold mb-1">Compounding Growth</div>
+					<p class="text-sm text-ink/70">Content pillars that build equity and turn attention into opportunity.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Results collage (100+ thin images) -->
+	<section id="results" class="bg-white">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16 overflow-hidden">
+			<h2 class="text-3xl md:text-4xl font-heading font-semibold mb-6 section-reveal text-ink dark:text-ink">Results Collage</h2>
+			<p class=" mb-6 section-reveal dark:text-ink/90">Snapshots of performance graphs, comment screenshots, and milestones. Replace with your assets (ideal size ~1024×94).</p>
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+				<!-- 20–40 total images depending on screen width; use provided dummy image everywhere -->
+				<!-- We'll render 20 for small screens, 40 for large -->
+				<script>
+				(function(){
+					const grid = document.currentScript.parentElement;
+					const imgUrl = 'src/5EyoN2c9LTt6TiZ9Wr7NA55kwE4.jpg'; // using provided image for all slots
+					const max = window.innerWidth >= 1024 ? 40 : 20;
+					for(let i=1;i<=max;i++){
+						// container ensures movement stays inside cell
+						const cell = document.createElement('div');
+					    cell.className = 'relative w-64 h-6 overflow-hidden rounded bg-white border border-secondary/10 dark:border-white/15'; // 256px × 24px
+                        const img = document.createElement('img');
+                        img.className = 'absolute inset-0 m-0 block h-full w-full object-cover hover:brightness-110 transition'; // Changed to object-cover to fill the exact dimensions
+						img.style.aspectRatio = '1024 / 94';
+						img.src = imgUrl;
+						img.alt = 'Result';
+						cell.appendChild(img);
+						grid.appendChild(cell);
+
+						// random floating animation within the cell bounds
+						if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+							const dx = 10 + Math.random() * 20; // 10-30px
+							const dy = 2 + Math.random() * 8;   // 2-10px
+							const dur = 2000 + Math.random() * 3000; // 2-5s
+							img.animate([
+								{ transform: 'translate(0px, 0px)' },
+								{ transform: `translate(${dx}px, ${-dy}px)` },
+								{ transform: `translate(${-dx}px, ${dy}px)` },
+								{ transform: 'translate(0px, 0px)' }
+							], {
+								duration: dur,
+								direction: 'alternate',
+								iterations: Infinity,
+								easing: 'ease-in-out',
+								delay: Math.random() * 1500
+							});
+						}
+					}
+				})();
+				</script>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- About Me -->
+	<section id="about" class="bg-white dark:bg-[#0b0b0b]">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+			<h2 class="text-3xl md:text-4xl font-heading font-semibold mb-6 section-reveal">About Me</h2>
+			<div class="grid gap-8 md:grid-cols-3 items-start">
+				<div class="md:col-span-2 section-reveal">
+					<p class="text-ink/80 leading-relaxed">
+						I help executives translate expertise into authority that moves markets. Over the past few years, I have partnered with founders and leaders across SaaS, fintech, and healthcare to design positioning, craft narratives, and build content systems that compound into revenue and opportunity. My approach blends rigorous research with crisp communication and an operator’s mindset: simple, clear, and relentlessly consistent. I believe personal brands should create real commercial impact—not vanity. When we work together, you get a structured process that respects your time, protects your voice, and delivers measurable results. From weekly approvals to attribution reporting, I aim to make the experience effortless while raising the standard of your public presence.
+					</p>
+				</div>
+				<div class="section-reveal rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] dark:border-white/15 p-6">
+					<div class="text-sm font-semibold mb-2">Quick facts</div>
+					<ul class="text-sm text-ink/70 space-y-1">
+						<li>Worked with 50+ executives</li>
+						<li>10M+ LinkedIn impressions generated</li>
+						<li>2–5x growth in 90 days, typical</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	
+
+	<!-- Services -->
+	<section id="services" class="bg-white dark:bg-[#0b0b0b]">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+			<div class="mb-12 section-reveal">
+				<h2 class="text-3xl md:text-4xl font-heading font-semibold">What We Do</h2>
+				<p class="text-ink/70 mt-3 max-w-2xl">Four services to build and scale your executive brand on LinkedIn with clarity, substance, and consistency.</p>
+			</div>
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+				<div class="group rounded-xl border border-secondary/10 p-6 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 hover:shadow-md transition section-reveal">
+					<div class="h-10 w-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition">🏛️</div>
+					<div class="font-semibold mb-1">Community Building</div>
+					<p class="text-sm text-ink/70 mb-4">Grow an engaged executive audience and pipeline.</p>
+					<span class="text-secondary text-sm font-semibold">Learn More →</span>
+				</div>
+				<div class="group rounded-xl border border-secondary/10 p-6 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 hover:shadow-md transition section-reveal">
+					<div class="h-10 w-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition">🧭</div>
+					<div class="font-semibold mb-1">Strategic Consulting</div>
+					<p class="text-sm text-ink/70 mb-4">Positioning, narrative, and GTM for thought leaders.</p>
+					<span class="text-secondary text-sm font-semibold">Learn More →</span>
+				</div>
+				<div class="group rounded-xl border border-secondary/10 p-6 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 hover:shadow-md transition section-reveal">
+					<div class="h-10 w-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition">✍️</div>
+					<div class="font-semibold mb-1">Content Development</div>
+					<p class="text-sm text-ink/70 mb-4">Ghostwritten posts, articles, and executive comms.</p>
+					<span class="text-secondary text-sm font-semibold">Learn More →</span>
+				</div>
+				<div class="group rounded-xl border border-secondary/10 p-6 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 hover:shadow-md transition section-reveal">
+					<div class="h-10 w-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:text-white transition">📈</div>
+					<div class="font-semibold mb-1">Growth Optimization</div>
+					<p class="text-sm text-ink/70 mb-4">Analytics, testing, and ROI improvements.</p>
+					<span class="text-secondary text-sm font-semibold">Learn More →</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Case Studies -->
+	<section id="work" class="bg-white dark:bg-[#0b0b0b]">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+			<div class="mb-10 section-reveal">
+				<h2 class="text-3xl md:text-4xl font-heading font-semibold">Case Studies</h2>
+				<p class="text-ink/70 mt-3 max-w-2xl">Selected transformations across industries. Each story covers objectives, strategy, execution, and measurable outcomes.</p>
+			</div>
+			<div class="grid gap-6 md:grid-cols-3">
+				<article class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 transition p-6 section-reveal">
+					<header class="flex items-center justify-between">
+						<h3 class="font-semibold">Series B SaaS – Demand Engine</h3>
+						<span class="text-xs text-ink/60">90 days</span>
+					</header>
+					<p class="text-sm text-ink/70 mt-2">Built POV-driven content pillars, instituted approvals, and launched a weekly narrative series.</p>
+					<ul class="mt-3 text-sm text-ink/80 space-y-1 list-disc list-inside">
+						<li>5x impressions; 480k pipeline attributed</li>
+						<li>Engagement rate up 210%</li>
+						<li>Inbound from Tier-1 prospects</li>
+					</ul>
+				</article>
+				<article class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 transition p-6 section-reveal">
+					<header class="flex items-center justify-between">
+						<h3 class="font-semibold">Fintech – Thought Leadership</h3>
+						<span class="text-xs text-ink/60">60 days</span>
+					</header>
+					<p class="text-sm text-ink/70 mt-2">Repositioned exec narrative around risk and trust; introduced case-led posts and AMA threads.</p>
+					<ul class="mt-3 text-sm text-ink/80 space-y-1 list-disc list-inside">
+						<li>3.2x reach; +6 speaking requests</li>
+						<li>Recruiting pipeline improved</li>
+						<li>Brand search up 38%</li>
+					</ul>
+				</article>
+				<article class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 transition p-6 section-reveal">
+					<header class="flex items-center justify-between">
+						<h3 class="font-semibold">Healthcare – Trust & Education</h3>
+						<span class="text-xs text-ink/60">120 days</span>
+					</header>
+					<p class="text-sm text-ink/70 mt-2">Educational cadence with clinician spotlights and outcomes visuals; governance-friendly process.</p>
+					<ul class="mt-3 text-sm text-ink/80 space-y-1 list-disc list-inside">
+						<li>2.4x impressions; 28% lead quality lift</li>
+						<li>Stakeholder adoption across teams</li>
+						<li>Exec profile completeness to 95%</li>
+					</ul>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- Resources / Blog Teaser -->
+	<section id="resources" class="bg-white dark:bg-[#0b0b0b]">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+			<h2 class="text-3xl md:text-4xl font-heading font-semibold mb-10 section-reveal">Insights & Resources</h2>
+			<div class="grid gap-6 md:grid-cols-3">
+				<div class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 p-6 transition section-reveal">
+					<div class="text-xs uppercase tracking-wide text-ink/60">LinkedIn Strategy</div>
+					<div class="font-semibold mt-1">The 3-Pillar Executive Content System</div>
+					<p class="text-sm text-ink/70 mt-2">A simple cadence to build authority consistently.</p>
+				</div>
+				<div class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 p-6 transition section-reveal">
+					<div class="text-xs uppercase tracking-wide text-ink/60">Personal Branding</div>
+					<div class="font-semibold mt-1">Craft a POV That Stands Out</div>
+					<p class="text-sm text-ink/70 mt-2">Move beyond generic wisdom with lived expertise.</p>
+				</div>
+				<div class="rounded-xl border border-secondary/10 bg-neutral dark:bg-[#111] hover:bg-white/70 dark:hover:bg-white/5 p-6 transition section-reveal">
+					<div class="text-xs uppercase tracking-wide text-ink/60">Content Marketing</div>
+					<div class="font-semibold mt-1">From Posts to Pipeline</div>
+					<p class="text-sm text-ink/70 mt-2">Turn attention into measurable revenue.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Newsletter -->
+	<section id="newsletter" class="bg-neutral dark:bg-black">
+		<div class="max-w-3xl mx-auto px-6 sm:px-8 lg:px-10 py-16 text-center">
+			<h2 class="text-2xl md:text-3xl font-heading font-semibold section-reveal">Subscribe to Weekly Insights</h2>
+			<p class="text-ink/70 mt-2 section-reveal">Actionable strategies on personal branding, LinkedIn, and executive communication.</p>
+			<form  id="newsletterForm" class="flex-col sm:flex-row gap-3 justify-center section-reveal">
+				<input name="email" type="email" placeholder="Your email" class="w-full sm:w-auto min-w-[260px] rounded-md border border-secondary/20 dark:border-white/20 px-4 py-3 hover:bg-white/70 dark:bg-white/10 dark:hover:bg-white/10 transition dark:text-neutral dark:placeholder-neutral/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20" />
+				<button type="submit" class="inline-flex items-center justify-center rounded-md btn-gradient text-white px-6 py-3 text-sm font-semibold transition hover:opacity-95">Subscribe</button>
+			</form>
+			<p class="text-xs text-ink/60 mt-2">No spam. Unsubscribe any time.</p>
+		</div>
+	</section>
+
+	<!-- Contact / Booking -->
+	<section id="contact" class="bg-neutral dark:bg-black">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16 grid gap-8 md:grid-cols-2">
+			<form id="contactForm" class="rounded-xl border border-secondary/10 bg-white dark:bg-[#111] dark:border-white/15 p-6 space-y-4 section-reveal">
+				<div class="grid gap-4 md:grid-cols-2">
+					<input name="name" placeholder="Name" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 hover:bg-neutral/70 dark:bg-white/10 dark:hover:bg-white/10 transition dark:text-neutral dark:placeholder-neutral/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20" />
+					<input name="email" placeholder="Email" type="email" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 hover:bg-neutral/70 dark:bg-white/10 dark:hover:bg-white/10 transition dark:text-neutral dark:placeholder-neutral/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20" />
+					<input name="company" placeholder="Company" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 md:col-span-2 hover:bg-neutral/70 dark:bg-white/10 dark:hover:bg-white/10 transition dark:text-neutral dark:placeholder-neutral/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20" />
+					<select name="service_needed" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 hover:bg-neutral/70 dark:bg-white/10 transition dark:text-neutral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20">
+						<option>Service interested in</option>
+						<option>Community Building</option>
+						<option>Strategic Consulting</option>
+						<option>Content Development</option>
+						<option>Growth Optimization</option>
+					</select>
+					<select name="budget" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 hover:bg-neutral/70 dark:bg-white/10 transition dark:text-neutral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20">
+						<option>Budget Range</option>
+						<option>$5k–$10k</option>
+						<option>$10k–$25k</option>
+						<option>$25k+</option>
+					</select>
+					<select name="timeline" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 md:col-span-2 hover:bg-neutral/70 dark:bg-white/10 transition dark:text-neutral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20">
+						<option>Timeline</option>
+						<option>ASAP</option>
+						<option>30–60 days</option>
+						<option>60–90 days</option>
+					</select>
+					<textarea name="textmessage" placeholder="What are you trying to achieve?" class="rounded-md border border-secondary/20 dark:border-white/20 px-3 py-2 md:col-span-2 h-28 hover:bg-neutral/70 dark:bg-white/10 dark:hover:bg-white/10 transition dark:text-neutral dark:placeholder-neutral/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/30 dark:focus-visible:ring-white/20"></textarea>
+				</div>
+				<button type="submit" class="inline-flex items-center justify-center rounded-md btn-gradient text-white px-5 py-3 text-sm font-semibold transition hover:opacity-95" type="button">Submit</button>
+			</form>
+			<div class="rounded-xl border border-secondary/10 bg-white dark:bg-[#111] dark:border-white/15 p-6 section-reveal">
+				<h3 class="font-heading font-semibold mb-2">Book a Call</h3>
+				<div class="text-sm text-ink/70">Add your calendar link here. You can embed Calendly or similar.</div>
+				<div class="mt-6 text-sm text-ink/70">Phone, email, and address can be listed here. Include FAQ later.</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="border-t border-secondary/10 bg-white dark:bg-[#0b0b0b] dark:text-neutral">
+		<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-10 grid gap-8 md:grid-cols-4">
+			<div class="space-y-2">
+				<div class="text-secondary font-heading font-semibold text-lg">Recognition</div>
+				<p class="text-sm text-ink/70">Premium personal brand and LinkedIn ghostwriting for executives, founders, and leaders.</p>
+			</div>
+			<div>
+				<div class="font-semibold mb-3">Company</div>
+				<ul class="space-y-2 text-sm">
+					<li><a href="#top" class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">About</a></li>
+					<li><a href="#work" class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Case Studies</a></li>
+					<li><a href="#resources" class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Blog</a></li>
+					<li><a href="#contact" class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="font-semibold mb-3">Services</div>
+				<ul class="space-y-2 text-sm">
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Community Building</li>
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Strategic Consulting</li>
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Content Development</li>
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Growth Optimization</li>
+				</ul>
+			</div>
+			<div>
+				<div class="font-semibold mb-3">Resources</div>
+				<ul class="space-y-2 text-sm">
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Resource Library</li>
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Webinars</li>
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">ROI Calculator</li>
+					<li class="px-2 py-1 rounded hover:bg-secondary/10 dark:hover:bg-white/10 transition">Brand Audit</li>
+				</ul>
+			</div>
+		</div>
+		<div class="border-t border-secondary/10 dark:border-white/15">
+			<div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-6 text-sm text-ink/60 dark:text-neutral/70 flex items-center justify-between">
+				<p>© <span id="year"></span> Recognition. All rights reserved.</p>
+				<p>Static site • TailwindCSS CDN</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// Year
+		document.getElementById('year').textContent = new Date().getFullYear();
+		// Reveal on scroll
+		const observer = new IntersectionObserver((entries)=>{
+			entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('revealed'); observer.unobserve(e.target); } });
+		},{ threshold:.2 });
+		document.querySelectorAll('.section-reveal').forEach(el=>observer.observe(el));
+		// Counters
+		const counters = document.querySelectorAll('.count');
+		const countObserver = new IntersectionObserver((entries)=>{
+			entries.forEach((e)=>{
+				if(!e.isIntersecting) return;
+				const el = e.target; const end = parseFloat(el.getAttribute('data-to')||'0');
+				let cur = 0; const dur = 1200; const start = performance.now();
+				function tick(t){
+					const p = Math.min(1, (t-start)/dur);
+					cur = Math.floor(end * (p<.5 ? 2*p*p : -1 + (4 - 2*p) * p));
+					el.textContent = cur.toString();
+					if(p<1) requestAnimationFrame(tick);
+				}
+				requestAnimationFrame(tick);
+				countObserver.unobserve(el);
+			})
+		},{threshold:.4});
+		counters.forEach(el=>countObserver.observe(el));
+		// Navbar shadow on scroll
+		const nav = document.getElementById('navbar');
+		const onScroll = ()=>{ if(window.scrollY>8){ nav.classList.add('nav-shadow') } else { nav.classList.remove('nav-shadow') } };
+		onScroll(); window.addEventListener('scroll', onScroll);
+		// Changing words in hero
+		// const words = ["Influence", "Demand", "Authority", "Opportunity"];
+		// const target = document.querySelector('.changing-words');
+		// let idx = 0;
+		// setInterval(()=>{
+		// 	idx = (idx + 1) % words.length;
+		// 	if(!target) return;
+		// 	target.style.opacity = 0;
+		// 	setTimeout(()=>{ target.textContent = words[idx]; target.style.opacity =1; }, 250);
+		// }, 2200);
+		// Theme toggle (dark/light) with persistence
+		const toggle = document.getElementById('themeToggle');
+		const root = document.documentElement;
+		const saved = localStorage.getItem('theme');
+		if(saved === 'dark'){ root.classList.add('dark'); toggle.textContent = '☀️'; }
+		if(saved === 'light'){ root.classList.remove('dark'); toggle.textContent = '🌙'; }
+		toggle?.addEventListener('click', ()=>{
+			const isDark = root.classList.toggle('dark');
+			localStorage.setItem('theme', isDark ? 'dark' : 'light');
+			toggle.textContent = isDark ? '☀️' : '🌙';
+		});
+	</script>
+    <script>
+        (() => {
+          const chars = "!<>-_\\/[]{}—=+*^?#________";
+          const words = ["Influence","Demand","Authority","Opportunity"];
+          const el = document.querySelector('.changing-words');
+          let i = 0;
+          function scramble(to){
+            const from = el.textContent || "";
+            const max = Math.max(from.length, to.length);
+            const queue = Array.from({length:max}, (_,idx)=>({
+              from: from[idx] || "", to: to[idx] || "",
+              start: Math.floor(Math.random()*20), end: Math.floor(Math.random()*20)+20
+            }));
+            let frame = 0;
+            return new Promise(res=>{
+              (function update(){
+                let out = "", done = 0;
+                for(const q of queue){
+                  if(frame >= q.end){ out += q.to; done++; }
+                  else if(frame >= q.start){ out += chars[Math.floor(Math.random()*chars.length)]; }
+                  else { out += q.from; }
+                }
+                el.textContent = out;
+                if(done === queue.length) res(); else { frame++; requestAnimationFrame(update); }
+              })();
+            });
+          }
+          async function loop(){
+            while(true){ i = (i+1)%words.length; await scramble(words[i]); await new Promise(r=>setTimeout(r,1200)); }
+          }
+          el.textContent = words[0]; loop();
+        })();
+        </script>
+
+<script>
+    // Your Web App URL from step 3
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwMYqBfTOdPpyq7ILh-p3-FF_FTR69vQ5ThPRH8mlmbTJICalbk2CZ6Fr1cx_tGkPOj/exec';
+  
+    const form   = document.getElementById('newsletterForm');
+    // const status = document.getElementById('status');
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      // Simple honeypot check
+    //   if (form.querySelector('[name="bot-field"]').value) return;
+  
+    //   const btn = form.querySelector('button[type="submit"]');
+    //   btn.disabled = true;
+    //   status.textContent = 'Submitting…';
+  console.log("form",form);
+      try {
+        const formData = new FormData(form);
+
+        console.log(formData);
+  
+        // Optional shared secret (uncomment if you enabled it in doPost):
+        // formData.append('token', 'your-shared-secret');
+  
+        await fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors' // prevents CORS errors; response is opaque
+        });
+  
+        // We can’t read the response; assume success if no network error
+        form.reset();
+        // status.textContent = 'Thanks! Your info has been submitted.';
+      } catch (err) {
+        console.error(err);
+        // status.textContent = 'Something went wrong. Please try again.';
+      } finally {
+        // btn.disabled = false;
+      }
+    });
+ 
+    // Your Web App URL from step 3
+    const Contact_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwE5-Xq98cPkp7fBXbPfF3bU_-ViIfk8UMxRVoCdtpWU_pggkQoRvImqiXwsUs0oksg/exec';
+  
+    const Contact_form   = document.getElementById('contactForm');
+    const status = document.getElementById('status');
+  
+    Contact_form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+    //   // Simple honeypot check
+    //  if (Contact_form.querySelector('[name="bot-field"]').value) return;
+  
+    //   const btn = Contact_form.querySelector('button[type="submit"]');
+    //   btn.disabled = true;
+    //   status.textContent = 'Submitting…';
+   
+   console.log("form",Contact_form);
+      try {
+        const formData = new FormData(form);
+        
+        console.log(formData);
+  
+  
+        // Optional shared secret (uncomment if you enabled it in doPost):
+        // formData.append('token', 'your-shared-secret');
+  
+        await fetch(Contact_SCRIPT_URL, {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors' // prevents CORS errors; response is opaque
+        });
+  
+        // We can’t read the response; assume success if no network error
+        form.reset();
+        //  status.textContent = 'Thanks! Your info has been submitted.';
+      } catch (err) {
+        console.error(err);
+        //  status.textContent = 'Something went wrong. Please try again.';
+      } finally {
+    //    btn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
