@@ -582,7 +582,7 @@
    
    console.log("form",Contact_form);
       try {
-        const formData = new FormData(form);
+        const formData = new FormData(Contact_form);
         
         console.log(formData);
   
@@ -597,7 +597,7 @@
         });
   
         // We can’t read the response; assume success if no network error
-        form.reset();
+        Contact_form.reset();
         //  status.textContent = 'Thanks! Your info has been submitted.';
       } catch (err) {
         console.error(err);
